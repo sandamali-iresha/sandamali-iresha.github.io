@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .myDiv {
+      height: 100%;
+      width: 80%;
+      border: 5px outset red;
+      background-color: lightblue;
+      text-align: center;
+    }
+    h1 {
+      color: brown;
+      text-align: justify;
+    }
+
+    h2 {
+      text-align: justify;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <center> <u>
+      <h1>HTML Tag</h1>
+    </u>
+
+    <div class="myDiv">
+      <h2>* An HTML tag is a piece of markup language used to indicate the beginning and end of an HTML element in an
+        HTML document.</h2>
+      <h2>* As part of an HTML element, HTML tags help web browsers convert HTML documents into web pages.</h2><br>
+      <u>
+        <h1>What is tag and types?</h1>
+      </u>
+      <h2>* The HTML tags can also be simply divided based on
+        basic categories like Basic HTML Root Tags, Formatting tags, Audio and Video Tags,
+        Form and Input Tags, Frame Tags, Link Tags, List Tags,
+        Table Tags, Style Tags, Meta Tags, etc.</h2>
+
+      <button onclick="showContent()">Show hidden content</button>
+  </center>
+
+  <template>
+    <center>
+      <h1>HTML Tag</h1>
+      <img src="download (1).jpg" width="350" height="200">
+    </center>
+  </template>
+
+  <script>
+    function showContent() {
+      let temp = document.getElementsByTagName("template")[0];
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+  </script>
+  </div>
+</body>
+
+</html>

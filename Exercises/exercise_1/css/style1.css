@@ -1,0 +1,27 @@
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+  body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(163, 211, 90) 0%, rgb(219, 233, 235) 35%, rgb(193, 213, 43) 71%);
+    border: 25px solid rgba(212, 25, 25, 0.7);
+  border-radius: 20px;
+  background-size: cover;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: brown;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }

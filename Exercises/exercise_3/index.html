@@ -1,49 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>exercise -2</title>
-    <script>
-        function myFunction() {
-          document.getElementById("demo").innerHTML = "Paragraph changed.";
-        }
-        </script>
-        
-    <style>
-        body {
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>exercise -2</title>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+
+  <style>
+    body {
       background: rgb(2, 0, 36);
       background: linear-gradient(90deg, rgb(90, 181, 211) 0%, rgb(219, 233, 235) 35%, rgb(43, 165, 213) 71%);
     }
-    h2{
-        font-size: 50px;
+
+    h2 {
+      font-size: 50px;
     }
-    p{
-        font-size: 30px;
-        text-align: justify;
+
+    p {
+      font-size: 30px;
+      text-align: justify;
     }
-    </style>
-  </head>
-  <body><center>
-    <h2><u>What is HTML</h2></u>
 
-<p id="demo">* HTML stands for Hyper Text Markup Language<br>
+    .content {
+      width: 100%;
+      margin-top: 8%;
+      padding-left: 80px;
+    }
 
-    * HTML is the standard markup language for creating Web pages<br>
-    
-    * HTML describes the structure of a Web page<br>
-    
-    * HTML consists of a series of elements.<br>
-    * HTML elements tell the browser how to display the content.<br>
-    * HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+    .content .section-1 p {
+      font-size: 30px;
+      color: black;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
 
-</p><br>
-    <button
-    style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
-<button type="button" onclick="myFunction()">Try it</button>
-<h3>
-    <li><a href="../exercise_4/index.html">exercise -3</a></li>
-  </h3>
-</center>
-  </body>
+<body>
+  <center>
+    <div class="container">
+      <div class="box">
+        <h2><u>What is HTML</h2></u>
+        <div class="content">
+          <div class="section-1">
+
+            <p id="demo">* HTML stands for Hyper Text Markup Language<br>
+
+              * HTML is the standard markup language for creating Web pages<br>
+
+              * HTML describes the structure of a Web page<br>
+
+              * HTML consists of a series of elements.<br>
+              * HTML elements tell the browser how to display the content.<br>
+              * HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+              link", etc.
+
+            </p><br>
+            <button
+              style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
+              <button type="button" onclick="myFunction()">Try it</button>
+            <h3>
+              <li><a href="../exercise_4/index.html">Lets go exercise_3</a></li>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+</body>
+
 </html>

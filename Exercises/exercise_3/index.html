@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,67 +9,153 @@
       document.getElementById("demo").innerHTML = "Paragraph changed.";
     }
   </script>
+<style>
+    :root {
+      --color_purple: #66217b;
+      --color_purple_bright: #953dad;
+      --color_dark: #0e0e0e;
+      --color_text: #424347;
+      --color_bright: #f7f7f7;
+      --color_red: #d18285;
+      --color_twitter: #00a7e6;
+    }
 
-  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
     body {
-      background: rgb(2, 0, 36);
-      background: linear-gradient(90deg, rgb(90, 181, 211) 0%, rgb(219, 233, 235) 35%, rgb(43, 165, 213) 71%);
-    }
-
-    h2 {
-      font-size: 50px;
-    }
-
-    p {
-      font-size: 30px;
-      text-align: justify;
-    }
-
-    .content {
+      min-width: 290px;
+      color: var(--color_text);
       width: 100%;
-      margin-top: 8%;
-      padding-left: 80px;
+      height: 100%;
+      line-height: 1.5;
+      overflow-x: hidden;
+      background: linear-gradient(90deg, rgb(90, 181, 211) 0%, rgb(219, 233, 235) 35%, rgb(43, 165, 213) 71%);
+      font-family: 'Open Sans', Arial, sans-serif;
     }
 
-    .content .section-1 p {
-      font-size: 30px;
-      color: black;
-      margin-bottom: 50px;
+    .main-section {
+      margin: 2rem 2rem;
+    }
+
+    .main-section header {
+      color: var(--color_purple_bright);
+      font-size: 1.5em;
+      font-weight: thin;
+    }
+
+    .doc-txt {
+      margin: 0 1.5rem;
+      font-size: 1.09em;
+    }
+
+    .doc-txt h2 {
+      margin: 1.5rem 0;
+      color: #333;
+    }
+
+    .doc-txt p {
+      margin-left: 1rem;
+      margin-top: 0.80rem;
+    }
+
+    .doc-txt ul {
+      margin: 1rem 3.5rem;
+      font-size: 1.1rem;
+    }
+
+    .doc-txt a {
+      text-decoration: none;
+      color: var(--color_purple_bright);
+    }
+
+    .doc-txt a:hover {
+      text-decoration: none;
+      color: var(--color_twitter);
     }
   </style>
 </head>
 
 <body>
-  <center>
-    <div class="container">
-      <div class="box">
-        <h2><u>What is HTML</h2></u>
-        <div class="content">
-          <div class="section-1">
+  <div class="doc-class">
+    <main id="main-doc">
+      <section class="main-section" id="c#_introduction">
+        <header>
+          <h1>HTML Introduction</h1>
+        </header>
+        <div class="doc-txt">
+          <h2 class="h2-doc">
+            What is HTML?
+          </h2>
+          <P>
+            HTML is a computer language devised to allow website creation.
+          </p>
+          <p>
 
-            <p id="demo">* HTML stands for Hyper Text Markup Language<br>
-
-              * HTML is the standard markup language for creating Web pages<br>
-
-              * HTML describes the structure of a Web page<br>
-
-              * HTML consists of a series of elements.<br>
-              * HTML elements tell the browser how to display the content.<br>
-              * HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
-              link", etc.
-
-            </p><br>
-            <button
-              style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
-              <button type="button" onclick="myFunction()">Try it</button>
-            <h3>
-              <li><a href="../exercise_4/index.html">Lets go exercise_3</a></li>
-            </h3>
-          </div>
+            These websites can then be viewed by anyone else connected to the Internet.
+          </p>
+          <p>
+            It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite
+            powerful in what it allows you to create.
+          </p>
+          <p>
+            It is constantly undergoing revision and evolution to meet the demands and requirements of the growing
+            Internet audience under the direction of the » W3C, the organisation charged with designing and maintaining
+            the language.
+          </p>
+          <p><strong>HTML is used for:</strong>
+          <ul>
+            <li>Web pages development</li>
+            <li>Web document creation</li>
+            <li>Internet navigation</li>
+            <li>cutting edge feature</li>
+            <li>Responsive images on web pages</li>
+            <li>Client-side storage</li>
+            <li>Offline capabilities usage</li>
+            <li>Data Entry support with HTML</li>
+            <li>And much, much more!</li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </center>
+        <div class="doc-txt">
+          <h2 class="h2-doc">
+            Why Use HTML?
+          </h2>
+          <ul>
+            <li>
+              Create Web site - You can create a website or customize an existing web template if you know HTML well.
+            </li>
+            <li>
+              Become a web designer - If you want to start a carrer as a professional web designer, HTML and CSS
+              designing is a must skill.
+            </li>
+            <li>
+              Understand web - If you want to optimize your website, to boost its speed and performance, it is good to
+              know HTML to yield best results.
+            </li>
+            <li>
+              Learn other languages - Once you understands the basic of HTML then other related technologies like
+              javascript, php, or angular are become easier to understand.
+            </li>
+            <li>
+              Responsive UI - HTML pages now-a-days works well on all platform, mobile, tabs, desktop or laptops owing
+              to responsive design strategy.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <center>
+        <button
+          style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
+          <button type="button" onclick="myFunction()">Try it</button>
+        <h3>
+          <li><a href="../exercise_4/index.html">Lets go exercise_3</a></li>
+        </h3>
+
+
 </body>
 
 </html>

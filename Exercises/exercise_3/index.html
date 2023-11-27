@@ -4,11 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>exercise -2</title>
-  <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "Paragraph changed.";
-    }
-  </script>
 <style>
     :root {
       --color_purple: #66217b;
@@ -40,27 +35,33 @@
 
     .main-section {
       margin: 2rem 2rem;
+      border: 25px solid rgba(212, 25, 25, 0.7);
+      
     }
 
     .main-section header {
       color: var(--color_purple_bright);
       font-size: 1.5em;
       font-weight: thin;
+      
     }
 
     .doc-txt {
       margin: 0 1.5rem;
       font-size: 1.09em;
+      
     }
 
     .doc-txt h2 {
       margin: 1.5rem 0;
       color: #333;
+      border: 5px solid black;
     }
 
     .doc-txt p {
-      margin-left: 1rem;
+      margin-left: 40px;
       margin-top: 0.80rem;
+      text-align: justify;
     }
 
     .doc-txt ul {
@@ -84,31 +85,31 @@
   <div class="doc-class">
     <main id="main-doc">
       <section class="main-section" id="c#_introduction">
-        <header>
-          <h1>HTML Introduction</h1>
-        </header>
+        <header><center>
+<p id="demo"><b>HTML INTRODUCTION</p></b>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "WHAT IS HTML?"'>Change topic !</button>
+          
+        </header></center>
         <div class="doc-txt">
-          <h2 class="h2-doc">
-            What is HTML?
-          </h2>
           <P>
-            HTML is a computer language devised to allow website creation.
+           * HTML is a computer language devised to allow website creation.
           </p>
           <p>
 
-            These websites can then be viewed by anyone else connected to the Internet.
+           * These websites can then be viewed by anyone else connected to the Internet.
           </p>
           <p>
-            It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite
+          * It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite
             powerful in what it allows you to create.
           </p>
           <p>
-            It is constantly undergoing revision and evolution to meet the demands and requirements of the growing
+          * It is constantly undergoing revision and evolution to meet the demands and requirements of the growing
             Internet audience under the direction of the » W3C, the organisation charged with designing and maintaining
             the language.
           </p>
-          <p><strong>HTML is used for:</strong>
-          <ul>
+          <p><strong>HTML is used for ------></strong>
+          <ul><b>
             <li>Web pages development</li>
             <li>Web document creation</li>
             <li>Internet navigation</li>
@@ -118,12 +119,12 @@
             <li>Offline capabilities usage</li>
             <li>Data Entry support with HTML</li>
             <li>And much, much more!</li>
-          </ul>
+          </ul></b>
         </div>
         <div class="doc-txt">
-          <h2 class="h2-doc">
+          <center><b><h2 class="h2-doc">
             Why Use HTML?
-          </h2>
+          </h2></center></b>
           <ul>
             <li>
               Create Web site - You can create a website or customize an existing web template if you know HTML well.
@@ -148,12 +149,8 @@
         </div>
       </section>
       <center>
-        <button
-          style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
-          <button type="button" onclick="myFunction()">Try it</button>
-        <h3>
-          <li><a href="../exercise_4/index.html">Lets go exercise_3</a></li>
-        </h3>
+        <h2> <b> <li><a href="../exercise_4/index.html">Lets go exercise_4</a></li></b></h2>
+      
 
 
 </body>

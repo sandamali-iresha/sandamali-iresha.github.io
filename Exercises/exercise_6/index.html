@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible"
+ content="IE=edge">
+ <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>GfG</title>
+ <style>
+     * {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+  body {
+    background:rgb(41, 44, 134);
+  background-size: cover;
+ 
+  }
+   .container {
+      height: 87vh;
+      width: 60%;
+      background: rgb(73, 155, 222);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 320px;
+      margin-top: 60px;
+      border-radius: 20px;
+    }
+
+    .container .box {
+      height: 76vh;
+      width: 106%;
+      padding: 0 45px;
+      padding-top: 45px;
+      background-color: rgba(255, 255, 255, 0.1);
+      z-index: 10;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      display: flex;
+      backdrop-filter: blur(25px);
+      box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    }
+</style>    
+</head>
+<body>
+    <div class="container">
+        <center> <div class="box">
+ <form id="myForm">
+ <fieldset>
+ <legend>Personal Details</legend>
+ <p>
+ <label>
+ Salutation
+ <br />
+ <select name="salutation">
+ <option>--None--</option>
+ <option>Mr.</option>
+ <option>Ms.</option>
+ <option>Mrs.</option>
+ <option>Dr.</option>
+ <option>Prof.</option>
+ </select>
+ </label>
+ </p>
+ <p>
+ <label>First name: <input name="firstName" /></label>
+ </p>
+ <p>
+ <label>Last name: <input name="lastName" /></label>
+ </p>
+ <p>
+ Gender :
+ <label><input type="radio" name="gender"
+ value="male" /> 
+ Male 
+ </label>
+ <label><input type="radio" name="gender"
+ value="female" /> 
+ Female 
+ </label>
+ </p>
+ <p>
+ <label>Email:<input type="email"
+ name="email" />
+ </label>
+ </p>
+ <p>
+    <label>Date of Birth:<input type="date"
+    name="birthDate">
+    </label>
+    </p>
+    <p>
+    <label>
+    Address :
+    <br />
+    <textarea name="address" cols="30"
+    rows="3">
+    </textarea>
+    </label>
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+    <p id="demo">I 'm agree</p>
+    <button
+            style="width: 90px;height: 40px; color: rgb(6, 8, 8); border-radius: 5px;border-color: rgb(122, 10, 10);background-color: beige;"
+            <button type="button" onclick="myFunction()">Try it</button>
+    </fieldset>
+    <h3>
+        <li><a href="../exercise_1/index.html">Lets go exercise_1</a></li>
+      </h3>
+    </form>
+    <script>
+         function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+        </script>
+   </body>
+   </html>
